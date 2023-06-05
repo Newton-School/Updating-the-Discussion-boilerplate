@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/", getAllDiscussion);
 router.post("/create", createDiscussion);
-router.post("/delete/:id",deleteDiscussion );
-router.post("/update/:id", updateDiscussion);
+router.delete("/delete/:id",deleteDiscussion );
+router.patch("/update/:id", updateDiscussion);
 
 module.exports = router;
